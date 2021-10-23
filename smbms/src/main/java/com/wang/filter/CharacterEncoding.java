@@ -4,14 +4,6 @@ package com.wang.filter;
 import javax.servlet.*;
 import java.io.IOException;
 
-/**
- * @描述
- * @参数 $
- * @返回值 $
- * @创建人 chenjie
- * @创建时间 $
- * @修改人和其它信息
- */
 public class CharacterEncoding implements Filter {
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {

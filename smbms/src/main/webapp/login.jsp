@@ -1,11 +1,11 @@
 ﻿<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html>
+<%--<!DOCTYPE html>--%>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
     <title>系统登录 - 超市订单管理系统</title>
-    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link type="text/css" rel="stylesheet" href="./css/style.css" />
     <script type="text/javascript">
 	/* if(top.location!=self.location){
 	      top.location=self.location;

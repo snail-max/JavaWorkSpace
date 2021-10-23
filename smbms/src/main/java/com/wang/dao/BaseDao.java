@@ -1,20 +1,13 @@
 package com.wang.dao;
 
-import com.sun.source.tree.NewArrayTree;
+
+
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.sql.*;
 import java.util.Properties;
 
-/**
- * @描述
- * @参数 $
- * @返回值 $
- * @创建人 chenjie
- * @创建时间 $
- * @修改人和其它信息
- */
 public class BaseDao {
 
 
@@ -56,6 +49,7 @@ public class BaseDao {
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
         }
+        System.out.println("*******************"+conn.toString()+"*******************创建数据库连接成功");
         return conn;
 
     }
