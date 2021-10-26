@@ -35,11 +35,11 @@ public class UserServiceImpl implements UserService {
     }
 
 
-//    @Test
-//    public void test() {
-//        UserServiceImpl userService = new UserServiceImpl();
-//        User admin = userService.login("admin", "12bfasbka");
-//        System.out.println(admin.getUserPassword());
-//    }
+    @Test
+    public void test() {
+        UserServiceImpl userService = new UserServiceImpl();
+        User admin = userService.login("admin", "123456");
+        System.out.println(admin.getUserPassword());
+    }
 
 }

@@ -16,9 +16,9 @@ public class UserDaoImpl implements UserDao {
         ResultSet rs = null;
         User user = null;
         if (conn != null) {
-            String sql = "select * from smbms where userCode = ? ";
-            Object[] params = {userCode};
-            rs = BaseDao.executeQuery(pstmt, conn, rs, sql, params);
+            String sql = "select * from smbms_user where userCode = ? ";
+            Object [] params = {userCode};
+            rs = BaseDao.executeQuery(conn, rs, sql, params);
             try{
                 while(rs.next()){
                     user = new User();

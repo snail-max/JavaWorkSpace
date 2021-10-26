@@ -55,11 +55,11 @@ public class BaseDao {
     }
 
     // 2、编写查询公共类的方法
-    public static ResultSet executeQuery(PreparedStatement pstmt, Connection conn, ResultSet rs, String sql, Object[] params) {
+    public static ResultSet executeQuery(Connection conn, ResultSet rs, String sql, Object[] params) {
         try {
-            pstmt = conn.prepareStatement(sql);
-            for (int i = 1; i < params.length; i++) {
-                pstmt.setObject(i, params[i - 1]);
+            PreparedStatement pstmt = conn.prepareStatement(sql);
+            for (int i = 0; i < params.length; i++) {
+                pstmt.setObject(i+1, params[i]);
             }
             rs = pstmt.executeQuery();
         } catch (SQLException throwables) {
